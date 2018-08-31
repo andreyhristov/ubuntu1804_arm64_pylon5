@@ -1,4 +1,4 @@
-FROM resin/aarch64-ubuntu
+FROM resin/aarch64-ubuntu:bionic
 
 RUN [ "cross-build-start" ]
 
