@@ -4,6 +4,7 @@ RUN [ "cross-build-start" ]
 
 RUN apt-get update \
 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	wget file \
 	build-essential \
 	autoconf \
 	less \
