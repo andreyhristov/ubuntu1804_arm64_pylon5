@@ -18,8 +18,4 @@ RUN apt-get update \
 ADD pylon_5.1.0.12682-deb0_arm64.deb /
 RUN dpkg -i /pylon_5.1.0.12682-deb0_arm64.deb
 
-RUN useradd -ms /bin/bash appuser
-
 RUN [ "cross-build-end" ]
-
-USER appuser
